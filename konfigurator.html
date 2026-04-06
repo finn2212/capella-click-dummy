@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>capellaprint - Notenheft konfigurieren</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>body { font-family: 'Noto Sans', sans-serif; }</style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Announcement Bar -->
+  <div class="blue py-2">
+    <div class="max-w-screen-xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-1 text-sm text-gray-700 px-4">
+      <span>Erstklassige Musikverlagsqualit&auml;t</span>
+      <span>B&uuml;hnenerprobte Notenpapiere</span>
+      <span>Kauf auf Rechnung</span>
+      <span>Schneller Versand</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="logo-text text-xl font-bold" style="color: var(--brand-primary); text-decoration: none;">
+        capella <span class="font-normal">AURIOPRINT</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="konfigurator.html" class="active text-gray-700 hover:text-gray-900">Notenheft konfigurieren</a>
+        <a href="klammerheftung.html" class="text-gray-700 hover:text-gray-900">Noten mit Klammerheftung</a>
+        <a href="spiralbindung.html" class="text-gray-700 hover:text-gray-900">Noten mit Spiralbindung</a>
+        <a href="good-to-know.html" class="text-gray-700 hover:text-gray-900">Wissenswertes</a>
+        <a href="contact.html" class="text-gray-700 hover:text-gray-900">Kontakt</a>
+      </nav>
+
+      <!-- Cart Icon Placeholder -->
+      <div class="flex items-center">
+        <a href="#" class="relative text-gray-700 hover:text-gray-900">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+          </svg>
+          <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden border-t border-gray-200 px-4 py-3 flex flex-wrap gap-3 text-sm">
+      <a href="konfigurator.html" class="active text-gray-700">Notenheft konfigurieren</a>
+      <a href="klammerheftung.html" class="text-gray-700">Noten mit Klammerheftung</a>
+      <a href="spiralbindung.html" class="text-gray-700">Noten mit Spiralbindung</a>
+      <a href="good-to-know.html" class="text-gray-700">Wissenswertes</a>
+      <a href="contact.html" class="text-gray-700">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1">
+    <div class="max-w-screen-xl mx-auto px-4">
+
+      <!-- Section 1: Vorteile -->
+      <section class="mt-10 flex flex-col md:flex-row gap-0">
+        <!-- Left: Vorteile -->
+        <div class="blue md:w-3/9 p-5 border-12 border-white">
+          <h2>Ihre Vorteile bei capellaprint</h2>
+          <div class="space-y-3 mt-4">
+            <div class="flex items-center gap-3">
+              <span class="icon-heart"></span>
+              <span>Erstklassiger Notendruck</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="icon-heart"></span>
+              <span>Musikalientypische Papierformate</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="icon-heart"></span>
+              <span>Prestissimo versandfertig</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="icon-heart"></span>
+              <span>Kauf auf Rechnung m&ouml;glich</span>
+            </div>
+          </div>
+        </div>
+        <!-- Middle + Right: Image placeholders -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="img-placeholder w-full h-full min-h-[250px]">
+            <span class="text-gray-500">Bild 1</span>
+          </div>
+        </div>
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="img-placeholder w-full h-full min-h-[250px]">
+            <span class="text-gray-500">Bild 2</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Form Heading -->
+      <div class="mt-20 px-2">
+        <h1 class="font-bold">Konfigurieren Sie hier Ihr Notenheft:</h1>
+      </div>
+
+      <!-- Section 3: The Form + Sidebar -->
+      <section class="mt-6 flex flex-col md:flex-row gap-0">
+
+        <!-- Left side: Form Steps -->
+        <div class="grey md:w-6/9 p-4 border-12 border-white">
+
+          <!-- Step 1: Projekttitel -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">1. Projekttitel*</h3>
+              <p class="text-sm text-gray-700">Bitte vergeben Sie hier einen eindeutigen Projekttitel.</p>
+            </div>
+            <div class="md:w-2/5 flex items-center">
+              <input type="text" placeholder="Projekttitel eingeben ..." class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white">
+            </div>
+          </div>
+
+          <!-- Step 2: Art des Projekts -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">2. Art des Projekts*</h3>
+              <p class="text-sm text-gray-700 mb-2">Zu Beginn ist es notwendig, zu wissen, um welche Art von Notenprojekt es sich handelt.</p>
+              <ul class="text-sm text-gray-700">
+                <li>Partitur/Notenheft ohne separate Stimmausz&uuml;ge / Instrumentalstimmen</li>
+                <li>Partitur mit separaten Stimmausz&uuml;gen / Instrumentalstimmen</li>
+                <li>Stimmausz&uuml;ge / Instrumentalstimmen ohne Partitur</li>
+              </ul>
+            </div>
+            <div class="md:w-2/5 flex flex-col justify-center gap-2">
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="projektart" class="mt-1" checked>
+                <span>Partitur / Notenheft <strong>ohne</strong> Stimmausz&uuml;ge / Instrumentalstimmen</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="projektart" class="mt-1">
+                <span>Partitur / Notenheft <strong>mit</strong> Stimmausz&uuml;gen / Instrumentalstimmen</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="projektart" class="mt-1">
+                <span>nur Stimmenausz&uuml;ge / Instrumentalstimmen <strong>ohne</strong> Partitur</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Papierformat -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">3. Papierformat*</h3>
+              <p class="text-sm text-gray-700 mb-2">Bitte w&auml;hlen Sie das Format aus, das die Noten haben. Verwenden Sie bitte ausschlie&szlig;lich die in capella voreingestellten capellaprint-Papierformate, z.B. &bdquo;capellaprint: A4&ldquo;.</p>
+              <p class="text-sm text-gray-700 mb-2"><strong>Bitte beachten Sie:</strong> Wenn Sie unterschiedliche Formate innerhalb eines Projekts haben (bspw. Partitur in DIN A3 und Stimmausz&uuml;ge in DIN A4), legen Sie bitte f&uuml;r jedes Format ein neues Projekt an.</p>
+              <p class="text-sm text-gray-700 mb-1">Beispiel:</p>
+              <ul class="text-sm text-gray-700">
+                <li>&raquo;Klavierauszug Chorheft C&auml;cilia&laquo;, Concertformat</li>
+                <li>&raquo;Chorsatz Chorheft C&auml;cilia&laquo;, DIN A4</li>
+              </ul>
+            </div>
+            <div class="md:w-2/5 flex flex-col justify-center gap-2">
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="papierformat" class="mt-1" checked>
+                <span>capellaprint: A4 (216 x 303 mm)</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="papierformat" class="mt-1">
+                <span>capellaprint: Klavierauszug (196 x 276 mm)</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="papierformat" class="mt-1">
+                <span>capellaprint: Concert (234 x 311 mm)</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="papierformat" class="mt-1">
+                <span>capellaprint: B4 (256 x 359 mm)</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="papierformat" class="mt-1">
+                <span>capellaprint: A3 (303 x 426 mm)</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="papierformat" class="mt-1">
+                <span>capellaprint: Dirigierpartitur (321 x 466 mm)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 4: Ausrichtung -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">4. Ausrichtung*</h3>
+              <p class="text-sm text-gray-700 mb-2">Bitte geben Sie nun an, ob die Noten im Hoch&ndash; oder im Querformat angelegt sind.</p>
+              <p class="text-sm text-gray-700">Bitte beachten Sie, dass Sie innerhalb eines Projekts die Ausrichtungen nicht mischen k&ouml;nnen.</p>
+            </div>
+            <div class="md:w-2/5 flex flex-col justify-center gap-2">
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="ausrichtung" class="mt-1" checked>
+                <span>Hochformat</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="ausrichtung" class="mt-1">
+                <span>Querformat</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 5: Farbigkeit Inhalt -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">5. Farbigkeit Inhalt*</h3>
+              <p class="text-sm text-gray-700 mb-2">Ihre Noten k&ouml;nnen im Innenteil entweder schwarzwei&szlig; oder farbig gedruckt werden.</p>
+              <p class="text-sm text-gray-700">Falls Ihr Notenprojekt einen Umschlag hat, wird dieser ohne Aufpreis farbig gedruckt. Instrumentalstimmen werden generell schwarzwei&szlig; gedruckt.</p>
+            </div>
+            <div class="md:w-2/5 flex flex-col justify-center gap-2">
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="farbigkeit" class="mt-1">
+                <span>Inhalt farbig</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="farbigkeit" class="mt-1" checked>
+                <span>Inhalt schwarzwei&szlig;</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 6: Seitenanzahl -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">6. Seitenanzahl*</h3>
+              <p class="text-sm text-gray-700 mb-2">Bitte geben Sie die Gesamtseitenanzahl Ihrer Datei an. Aus produktionstechnischen Gr&uuml;nden muss diese immer durch 4 teilbar sein.</p>
+              <p class="text-sm text-red-600 font-bold mb-2">Bitte beachten Sie, dass wir Ihr Heft in den Formaten DIN A4, Klavierauszug und Concert bei weniger als 88 Seiten Inhalt standardm&auml;&szlig;ig klammerheften.</p>
+            </div>
+            <div class="md:w-2/5 flex flex-col justify-center">
+              <label class="text-sm font-bold mb-1">Seitenanzahl Inhalt:</label>
+              <select class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+                <option value="36">36</option>
+                <option value="40">40</option>
+                <option value="44">44</option>
+                <option value="48">48</option>
+                <option value="52">52</option>
+                <option value="56">56</option>
+                <option value="60">60</option>
+                <option value="64">64</option>
+                <option value="68">68</option>
+                <option value="72">72</option>
+                <option value="76">76</option>
+                <option value="80">80</option>
+                <option value="84">84</option>
+                <option value="88">88</option>
+                <option value="92">92</option>
+                <option value="96">96</option>
+                <option value="100">100</option>
+                <option value="104">104</option>
+                <option value="108">108</option>
+                <option value="112">112</option>
+                <option value="116">116</option>
+                <option value="120">120</option>
+                <option value="124">124</option>
+                <option value="128">128</option>
+                <option value="132">132</option>
+                <option value="136">136</option>
+                <option value="140">140</option>
+                <option value="144">144</option>
+                <option value="148">148</option>
+                <option value="152">152</option>
+                <option value="156">156</option>
+                <option value="160">160</option>
+                <option value="164">164</option>
+                <option value="168">168</option>
+                <option value="172">172</option>
+                <option value="176">176</option>
+                <option value="180">180</option>
+                <option value="184">184</option>
+                <option value="188">188</option>
+                <option value="192">192</option>
+                <option value="196">196</option>
+                <option value="200">200</option>
+                <option value="204">204</option>
+                <option value="208">208</option>
+                <option value="212">212</option>
+                <option value="216">216</option>
+                <option value="220">220</option>
+                <option value="224">224</option>
+                <option value="228">228</option>
+                <option value="232">232</option>
+                <option value="236">236</option>
+                <option value="240">240</option>
+                <option value="244">244</option>
+                <option value="248">248</option>
+                <option value="252">252</option>
+                <option value="256">256</option>
+                <option value="260">260</option>
+                <option value="264">264</option>
+                <option value="268">268</option>
+                <option value="272">272</option>
+                <option value="276">276</option>
+                <option value="280">280</option>
+                <option value="284">284</option>
+                <option value="288">288</option>
+                <option value="292">292</option>
+                <option value="296">296</option>
+                <option value="300">300</option>
+              </select>
+              <p class="text-xs text-gray-500 mt-2">Verwenden Sie bitte in der aktuellen capella-Version die Funktion Datei &ndash; Drucken mit capellaprint... Dann wird die Seitenzahl automatisch auf eine durch 4 teilbare Zahl angepasst.</p>
+            </div>
+          </div>
+
+          <!-- Step 7: Bindung -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">7. Bindung*</h3>
+              <p class="text-sm text-gray-700">Bitte beachten Sie, dass bei den Formaten DIN B4, DIN A3 und Dirigent sowie bei allen Querformaten und bei mehr als 88 Seiten Inhalt nur Spiralbindung verf&uuml;gbar ist.</p>
+            </div>
+            <div class="md:w-2/5 flex items-center">
+              <p class="text-sm font-bold">Bindung: Klammerheftung</p>
+            </div>
+          </div>
+
+          <!-- Step 8: Umschlag -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">8. Umschlag</h3>
+              <p class="text-sm text-gray-700 mb-2">Unser hochwei&szlig;er Umschlagkarton mit 260g/m&sup2; gibt Farben brillant wieder und besitzt ein hervorragendes Aufschlagverhalten. Die einseitig matte Oberfl&auml;che l&auml;sst sich hervorragend bedrucken und bricht auch bei starker Beanspruchung nicht auf.</p>
+              <p class="text-sm text-gray-700">Sofern Sie &bdquo;mit Umschlag&ldquo; w&auml;hlen, m&uuml;ssen Sie eine separate 4-seitige PDF-Datei im gleichen Format hochladen, die die 4 Umschlagseiten enth&auml;lt.</p>
+            </div>
+            <div class="md:w-2/5 flex flex-col justify-center gap-2">
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="umschlag" class="mt-1">
+                <span>Mit Umschlag</span>
+              </label>
+              <label class="flex items-start gap-2 text-sm cursor-pointer">
+                <input type="radio" name="umschlag" class="mt-1" checked>
+                <span>Ohne Umschlag</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 9: Notenupload -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4 border-b border-gray-300 pb-8">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">9. Notenupload*</h3>
+              <p class="text-sm text-gray-700">Hier laden Sie die Druckdaten der Partitur als PDF auf unseren Server. Ihre Daten werden verschl&uuml;sselt &uuml;bertragen. Wir pr&uuml;fen sie auf Druckbarkeit und melden uns ggf. per E-Mail. Bitte nutzen Sie zur Erstellung des PDFs die Funktion &bdquo;Drucken mit capellaprint...&ldquo; im Datei-Men&uuml; in der aktuellen capella-Version. Auf anderem Weg erstellte PDF-Dateien k&ouml;nnen unter Umst&auml;nden nicht gedruckt werden.</p>
+            </div>
+            <div class="md:w-2/5 flex items-center">
+              <input type="file" disabled class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white cursor-not-allowed opacity-60">
+            </div>
+          </div>
+
+          <!-- Step 10: Stimmenauszuege -->
+          <div class="mb-8 flex flex-col gap-4 border-b border-gray-300 pb-8">
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="md:w-3/5">
+                <h3 class="font-bold mb-2">10. Stimmausz&uuml;ge / Instrumentalstimmen*</h3>
+                <p class="text-sm text-gray-700 mb-2">Wenn Sie Stimmausz&uuml;ge / Instrumentalstimmen drucken wollen, k&ouml;nnen Sie diese hier konfigurieren. Bitte fertigen Sie die Stimmausz&uuml;ge bzw. Instrumentalstimmen in capella an und exportieren Sie die einzelnen Ausz&uuml;ge jeweils mit der Funktion Drucken mit capellaprint im Datei-Men&uuml; von capella. Bitte geben Sie an, wie viele Seiten die Stimmausz&uuml;ge haben.</p>
+                <p class="text-sm text-gray-700">W&auml;hlen Sie bitte zus&auml;tzlich aus, wie viele Exemplare Sie jeweils brauchen (z.B. Orchestermusik: 8 Erste Violinen, 6 Zweite Violinen etc.). Bitte beachten Sie, dass wir Stimmausz&uuml;ge / Instrumentalstimmen am rechten Rand 3-5 mm kleiner schneiden, damit diese nicht &uuml;berstehen.</p>
+              </div>
+              <div class="md:w-2/5 flex flex-col justify-center gap-3">
+                <div>
+                  <label class="text-sm font-bold mb-1 block">Stimme benennen (bspw. &raquo;Violine 1&laquo;):</label>
+                  <input type="text" placeholder="Stimmenname eingeben ..." class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white">
+                </div>
+                <div class="flex gap-2">
+                  <div class="flex-1">
+                    <label class="text-sm font-bold mb-1 block">Seitenanzahl Inhalt:</label>
+                    <select class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white">
+                      <option value="4">4</option>
+                      <option value="8">8</option>
+                      <option value="12">12</option>
+                      <option value="16">16</option>
+                      <option value="20">20</option>
+                      <option value="24">24</option>
+                      <option value="28">28</option>
+                      <option value="32">32</option>
+                      <option value="36">36</option>
+                      <option value="40">40</option>
+                      <option value="44">44</option>
+                      <option value="48">48</option>
+                    </select>
+                  </div>
+                  <div class="flex-1">
+                    <label class="text-sm font-bold mb-1 block">Exemplare pro Set:</label>
+                    <select class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="12">12</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn-black-sm self-start">Stimme Hinzuf&uuml;gen</button>
+                <p class="text-xs text-gray-500">Sie k&ouml;nnen beliebig viele weitere Instrumentalstimmen hinzuf&uuml;gen.</p>
+              </div>
+            </div>
+            <!-- Stimmen Table -->
+            <div class="overflow-x-auto mt-4">
+              <table class="w-full text-sm border border-gray-300">
+                <thead class="bg-gray-200">
+                  <tr>
+                    <th class="text-left px-3 py-2 border-b border-gray-300">Stimmenname:</th>
+                    <th class="text-left px-3 py-2 border-b border-gray-300">Seitenanzahl Inhalt:</th>
+                    <th class="text-left px-3 py-2 border-b border-gray-300">Exemplare pro Set:</th>
+                    <th class="text-left px-3 py-2 border-b border-gray-300">Dateiname:</th>
+                    <th class="text-left px-3 py-2 border-b border-gray-300">L&ouml;schen:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="px-3 py-4 text-gray-400 text-center" colspan="5">Noch keine Stimmen hinzugef&uuml;gt.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Step 11: In den Warenkorb -->
+          <div class="mb-8 flex flex-col md:flex-row gap-4">
+            <div class="md:w-3/5">
+              <h3 class="font-bold mb-2">11. In den Warenkorb*</h3>
+              <p class="text-sm text-gray-700">Bitte legen Sie das Projekt nun in den Warenkorb. Sie k&ouml;nnen danach noch weitere Projekte anlegen und gemeinsam in einer Lieferung versandkostenoptimiert bestellen.</p>
+            </div>
+            <div class="md:w-2/5 flex items-center">
+              <button class="btn-black opacity-50 cursor-not-allowed" disabled>Jetzt in den Warenkorb legen</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right side: Sticky Sidebar -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div style="position: sticky; top: 120px;">
+
+            <!-- Green box: Price & Cart -->
+            <div class="green p-5 rounded">
+              <!-- Auflage -->
+              <div class="mb-4">
+                <p class="text-sm font-bold mb-2">Ihre Auflage:</p>
+                <div class="flex items-center gap-3">
+                  <button class="w-8 h-8 border border-gray-400 rounded flex items-center justify-center text-lg font-bold bg-white">-</button>
+                  <span class="text-lg font-bold w-8 text-center">1</span>
+                  <button class="w-8 h-8 border border-gray-400 rounded flex items-center justify-center text-lg font-bold bg-white">+</button>
+                </div>
+              </div>
+              <!-- Produktionsdauer -->
+              <div class="mb-4">
+                <p class="text-sm font-bold mb-1">Produktionsdauer:</p>
+                <h2 class="text-xl">2&ndash;5 Werktage</h2>
+                <p class="text-xs text-gray-600">zzgl. Postlaufzeit 2-5 Werktage</p>
+              </div>
+              <!-- Preis -->
+              <div class="mb-4">
+                <p class="text-sm font-bold mb-1">Preis f&uuml;r die gew&uuml;nschte Auflagenh&ouml;he:</p>
+                <h2 class="text-2xl font-bold">&euro; 0.00</h2>
+                <p class="text-xs text-gray-600">Preis inkl. 7% MwSt., ggf. zzgl. Versandkosten</p>
+              </div>
+              <!-- Cart Button -->
+              <button class="btn-black opacity-50 cursor-not-allowed" disabled>Jetzt in den Warenkorb legen</button>
+            </div>
+
+            <!-- Red box: Bitte beachten -->
+            <div class="red p-5 rounded mt-6">
+              <h2 class="text-white">Bitte beachten:</h2>
+              <p class="text-sm text-white mb-2">Bitte nutzen Sie f&uuml;r den Export Ihrer Noten als PDF-Dateien die Funktion "Drucken mit capellaprint" im Datei-Men&uuml; von capella.</p>
+              <p class="text-sm text-white font-bold">Nur so kann eine fehlerfreie Druckproduktion gew&auml;hrleistet werden!</p>
+            </div>
+
+            <!-- Pink box: Kostenfreier Versand -->
+            <div class="pink p-5 rounded mt-5">
+              <h1 class="font-bold text-xl leading-tight">Kostenfreier Versand innerhalb Deutschlands</h1>
+              <h1 class="font-bold text-xl leading-tight mt-2">Ab 50,- Euro Einkaufswert</h1>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Bottom section: 3 columns -->
+      <section class="mt-20 flex flex-col md:flex-row gap-0 mb-16">
+        <!-- Left: Massvorgaben -->
+        <div class="red md:w-3/9 p-5 border-12 border-white">
+          <h2 class="text-white">Ma&szlig;vorgaben</h2>
+          <p class="text-sm text-white mb-4">Um bestm&ouml;gliche Qualit&auml;t in der Druckproduktion zu gew&auml;hrleisten, ist es notwendig, dass die Druckdaten korrekt angelegt sind. Bitte laden Sie die Ma&szlig;vorgaben herunter und legen Sie Ihre Druckdaten danach an.</p>
+          <a href="#" class="btn-black-sm">Ma&szlig;vorgaben (PDF)</a>
+        </div>
+        <!-- Middle: Hilfe -->
+        <div class="yellow md:w-3/9 p-5 border-12 border-white">
+          <h2>Sie ben&ouml;tigen Hilfe? Schreiben Sie uns!</h2>
+          <p class="text-sm text-gray-700 mb-3">Kommen Sie nicht weiter? Gerne sind wir f&uuml;r Sie da. Bitte schreiben Sie uns eine E-Mail:</p>
+          <h5 class="font-bold mb-3"><a href="mailto:fragen@capellaprint.com" class="text-blue-700 hover:underline">fragen@capellaprint.com</a></h5>
+          <p class="text-sm text-gray-700">Wir melden uns baldm&ouml;glichst bei Ihnen zur&uuml;ck. Gemeinsam finden wir eine L&ouml;sung!</p>
+        </div>
+        <!-- Right: Empty -->
+        <div class="md:w-3/9 border-12 border-white"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="grey">
+    <div class="max-w-screen-xl mx-auto px-4 py-10">
+
+      <!-- Footer Top Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+        <!-- Service-Hotline -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Service-Hotline</h3>
+          <p class="text-gray-600 text-sm">Unterst&uuml;tzung und Beratung unter:</p>
+          <p class="text-gray-700 text-lg font-bold">07309 / 4010838</p>
+          <p class="text-gray-600 text-sm">Mo-Fr, 10:00 - 14:00 Uhr</p>
+          <p class="text-gray-600 text-sm mt-1">Oder &uuml;ber unser Kontaktformular.</p>
+        </div>
+
+        <!-- Rechtliches -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Rechtliches</h3>
+          <ul class="list-none p-0 space-y-1 text-sm">
+            <li><a href="contact.html" class="text-gray-700 hover:text-blue-700">Impressum</a></li>
+            <li><a href="agb.html" class="text-gray-700 hover:text-blue-700">AGB</a></li>
+            <li><a href="shipping.html" class="text-gray-700 hover:text-blue-700">Zahlung &amp; Versand</a></li>
+            <li><a href="datenschutz.html" class="text-gray-700 hover:text-blue-700">Datenschutz</a></li>
+            <li><a href="widerrufsrecht.html" class="text-gray-700 hover:text-blue-700">Widerrufserkl&auml;rung</a></li>
+          </ul>
+        </div>
+
+        <!-- Sicher einkaufen -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Sicher einkaufen</h3>
+          <p class="text-gray-600 text-sm">Bei capellaprint kaufen Sie sicher ein. Dies wird erm&ouml;glicht durch SSL-Verschl&uuml;sselung, bei der eine sichere Verbindung zwischen unserem Server und Ihrem Browser aufgebaut wird.</p>
+          <p class="text-gray-600 text-sm font-bold mt-2">Sicheres Einkaufen nach DSGVO Standards</p>
+        </div>
+
+        <!-- Versandarten & Zahlungsarten -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Versandarten</h3>
+          <div class="flex gap-2 mb-4">
+            <div class="icon-placeholder" title="Versandart"></div>
+          </div>
+
+          <h3 class="font-bold text-gray-900 mb-3">Zahlungsarten</h3>
+          <div class="flex gap-2">
+            <div class="icon-placeholder" title="Zahlungsart"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Wir sind Mitglied -->
+      <div class="border-t border-gray-300 pt-6 mb-6">
+        <p class="text-sm text-gray-700 font-bold mb-1">Wir sind Mitglied im:</p>
+        <p class="text-sm text-gray-600">BDM &ndash; Bundesverband Deutscher Musikalienfachh&auml;ndler</p>
+      </div>
+
+      <!-- Impressum -->
+      <div class="border-t border-gray-300 pt-6 mb-6">
+        <h3 class="font-bold text-gray-900 mb-3">Impressum</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          AURIO GmbH, Augsburger Stra&szlig;e 9, 86497 Horgau, Deutschland<br>
+          Tel.: 08294 / 8604974<br>
+          E-Mail: office@aurioprint.com<br>
+          Registergericht: Augsburg<br>
+          Registernummer: HRB 33832<br>
+          Gesch&auml;ftsf&uuml;hrer: Sebastian Gabriel<br>
+          Umsatzsteuer-Identifikationsnummer: DE326155106<br>
+          Verantwortliche/r i.S.d. &sect; 18 Abs. 2 MStV: Sebastian Gabriel, c/o AURIO GmbH, Augsburger Stra&szlig;e 9, 86497 Horgau<br><br>
+          Plattform der EU-Kommission zur Online-Streitbeilegung: <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener" class="text-blue-700 hover:underline">https://ec.europa.eu/odr</a><br><br>
+          Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+        </p>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-300 pt-6 text-center">
+        <p class="text-xs text-gray-500">
+          * Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a href="shipping.html" class="text-blue-700 hover:underline">Versandkosten</a>, wenn nicht anders angegeben.<br>
+          &copy; 2026 AURIOPRINT &ndash; Alle Rechte vorbehalten.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
