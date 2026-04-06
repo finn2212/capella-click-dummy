@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>capellaprint - Spiralbindung</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>body { font-family: 'Noto Sans', sans-serif; }</style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Announcement Bar -->
+  <div class="blue py-2">
+    <div class="max-w-screen-xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-1 text-sm text-gray-700 px-4">
+      <span>Erstklassige Musikverlagsqualit&auml;t</span>
+      <span>B&uuml;hnenerprobte Notenpapiere</span>
+      <span>Kauf auf Rechnung</span>
+      <span>Schneller Versand</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="logo-text text-xl font-bold" style="color: var(--brand-primary); text-decoration: none;">
+        capella <span class="font-normal">AURIOPRINT</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Notenheft konfigurieren</a>
+        <a href="klammerheftung.html" class="text-gray-700 hover:text-gray-900">Noten mit Klammerheftung</a>
+        <a href="spiralbindung.html" class="active-link">Noten mit Spiralbindung</a>
+        <a href="good-to-know.html" class="text-gray-700 hover:text-gray-900">Wissenswertes</a>
+        <a href="contact.html" class="text-gray-700 hover:text-gray-900">Kontakt</a>
+      </nav>
+
+      <!-- Cart Icon Placeholder -->
+      <div class="flex items-center">
+        <a href="#" class="relative text-gray-700 hover:text-gray-900">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+          </svg>
+          <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden border-t border-gray-200 px-4 py-3 flex flex-wrap gap-3 text-sm">
+      <a href="#" class="text-gray-700">Notenheft konfigurieren</a>
+      <a href="klammerheftung.html" class="text-gray-700">Noten mit Klammerheftung</a>
+      <a href="spiralbindung.html" class="active-link">Noten mit Spiralbindung</a>
+      <a href="good-to-know.html" class="text-gray-700">Wissenswertes</a>
+      <a href="contact.html" class="text-gray-700">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1">
+    <div class="max-w-screen-xl mx-auto px-4 py-12">
+
+      <!-- Section 1: Hero Image Placeholder -->
+      <section class="mb-12">
+        <div class="img-placeholder w-full" style="max-height: 350px; height: 350px;">
+          <span class="text-gray-500">Hero Image - Spiralbindung</span>
+        </div>
+      </section>
+
+      <!-- Section 2: Intro + Features -->
+      <section class="flex flex-col md:flex-row gap-8 mb-12">
+        <!-- Left Column -->
+        <div class="md:w-3/9">
+          <h2>Notenbuch mit Spiralbindung g&uuml;nstig drucken lassen</h2>
+          <p class="mb-4">Auch wer Gro&szlig;es vor hat, wird bei AURIOPRINT f&uuml;ndig: Mit unseren Spiralbindungen bekommt auch der dickste Klavierauszug festen Halt.</p>
+          <p class="mb-4">Spiralgebundene Partituren k&ouml;nnen sowohl im Hochformat als auch im Querformat hergestellt werden.</p>
+          <p>Mit einem Seitenumfang ab 2 bis zu 400 Seiten Innenteil (und ggf. einem farbigen Umschlag, wenn Sie m&ouml;chten) sind es wahre Allesk&ouml;nner in unserem Produktportfolio.</p>
+        </div>
+
+        <!-- Right Column: Features -->
+        <div class="md:w-6/9 green rounded-lg p-5">
+          <div class="flex flex-col md:flex-row gap-8">
+            <!-- Left Half -->
+            <div class="md:w-1/2">
+              <h1 class="font-bold mb-4">Eigenschaften</h1>
+              <p class="mb-4">Wir verwenden die f&uuml;r Musikalien besonders geeignete Coilbindung, die sich von der herk&ouml;mmlichen Spiralbindung oder gar Plastikkammbindung nicht nur durch edleres Aussehen, sondern und vor allem auch durch leises Umbl&auml;ttern und dadurch bessere Nutzbarkeit im Konzert auszeichnet.</p>
+              <a href="#" class="btn-black-sm">Ma&szlig;vorgaben (PDF)</a>
+            </div>
+
+            <!-- Right Half: Feature List -->
+            <div class="md:w-1/2 space-y-3">
+              <div class="flex items-start gap-2">
+                <span class="icon-heart"></span>
+                <span>Formate: DIN A4 / 19 x 27 cm / 22,8 x 30,5 cm / DIN B4 / DIN A3 / 31,5 x 46 cm</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="icon-heart"></span>
+                <span>F&uuml;r gro&szlig;e Partituren (bspw. Dirigierpartituren), hervorragend geeignet</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="icon-heart"></span>
+                <span>Seitenumfang von 4&ndash;300 Seiten + Umschlag m&ouml;glich</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="icon-heart"></span>
+                <span>Hochformat und Querformat m&ouml;glich</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="icon-heart"></span>
+                <span>3&ndash;6 Werktage Produktionszeit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Topseller -->
+      <section class="flex flex-col md:flex-row gap-0 mt-20">
+        <!-- Left Column -->
+        <div class="md:w-3/9 pr-4 flex flex-col">
+          <div class="mb-6">
+            <h2>Direkt zu den Topsellern</h2>
+            <p>Starten Sie mit unseren meistgefragten Druckprodukten &ndash; diese Formate stellen wir t&auml;glich zigfach her.</p>
+          </div>
+          <div class="mt-auto beige rounded-lg p-5">
+            <p class="mb-2">Weniger als 88 Seiten Inhalt? G&uuml;nstigere Preise gesucht?</p>
+            <h2><a href="klammerheftung.html" class="hover:text-blue-700">Zu den Notenheften mit Klammerheftung</a></h2>
+          </div>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="blue rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="img-placeholder w-full h-48">
+              <span class="text-gray-500">Produktbild</span>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch DIN A4 Spiralbindung hoch</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>88-300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Deckblatt zus&auml;tzlich mit transparenter Folie m&ouml;glich</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Inhalt: 90g Notenpapier elfenbeinfarben, schwarzwei&szlig; bedruckbar</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="blue rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="img-placeholder w-full h-48">
+              <span class="text-gray-500">Produktbild</span>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch DIN A4 Spiralbindung quer</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Perfekt f&uuml;r Orgelnoten geeignet</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Langlebige und praktikable Qualit&auml;t der Bindung, ger&auml;uscharm umzubl&auml;ttern</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Hochformat -->
+      <section class="flex flex-col md:flex-row gap-0 mt-20">
+        <!-- Left Column -->
+        <div class="md:w-3/9 pr-4 flex flex-col justify-center">
+          <h2>Notenbuch Spiralbindung <span class="red px-2 rounded text-white">Hochformat</span></h2>
+          <p>Sie k&ouml;nnen g&auml;ngige Sonderformate f&uuml;r Musikalien produzieren lassen.</p>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="green rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch &raquo;Peters&laquo; Spiralbindung hoch</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 19 x 27 cm hoch</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Das bekannte Format der Klavierausz&uuml;ge der EDITION PETERS</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>88&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="pink rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch &raquo;Concert&laquo; Spiralbindung hoch</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 22,8 x 30,5 cm hoch</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Bekannt von EDITION PETERS, SCHOTT Music u.v.a.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>88&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: More Hochformat -->
+      <section class="flex flex-col md:flex-row gap-0">
+        <!-- Left Card -->
+        <div class="md:w-1/3 border-12 border-white">
+          <div class="yellow rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch DIN B4 Spiralbindung hoch</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 25 x 35,3 cm hoch</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Hervorragend f&uuml;r Dirigierpartituren geeignet</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="md:w-1/3 border-12 border-white">
+          <div class="orange rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch DIN A3 Spiralbindung hoch</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 29,7 x 42 cm hoch</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>F&uuml;r gro&szlig;e Partituren und Stimmen</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="md:w-1/3 border-12 border-white">
+          <div class="darkblue rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch &raquo;Dirigent&laquo; Spiralbindung hoch</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 31,5 x 46 cm hoch</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Der Gigant f&uuml;r die gro&szlig;en Werke!</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Querformat -->
+      <section class="flex flex-col md:flex-row gap-0 mt-20">
+        <!-- Left Column -->
+        <div class="md:w-3/9 pr-4 flex flex-col justify-center">
+          <h2>Notenbuch Spiralbindung <span class="red px-2 rounded text-white">Querformat</span></h2>
+          <p>Auch f&uuml;r Notendruck im Querformat ist unsere Spiralbindung hervorragend geeignet.</p>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="green rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch &raquo;Peters&laquo; Spiralbindung quer</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 27 x 19 cm quer</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Das bekannte Format der Klavierausz&uuml;ge der EDITION PETERS</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="md:w-3/9 border-12 border-white">
+          <div class="pink rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch &raquo;Concert&laquo; Spiralbindung quer</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 30,5 x 22,8 cm quer</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Bekannt von EDITION PETERS, SCHOTT Music u.v.a.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: More Querformat -->
+      <section class="flex flex-col md:flex-row gap-0">
+        <!-- Left Card -->
+        <div class="md:w-1/3 border-12 border-white">
+          <div class="yellow rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch DIN B4 Spiralbindung quer</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 35,3 x 25 cm quer</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Hervorragend f&uuml;r Dirigierpartituren geeignet</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="md:w-1/3 border-12 border-white">
+          <div class="orange rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch DIN A3 Spiralbindung quer</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 42 x 29,7 cm quer</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>F&uuml;r gro&szlig;e Partituren und Stimmen</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="md:w-1/3 border-12 border-white">
+          <div class="darkblue rounded-lg overflow-hidden h-full flex flex-col">
+            <div class="p-5 flex flex-col flex-1">
+              <h2>Notenbuch &raquo;Dirigent&laquo; Spiralbindung quer</h2>
+              <div class="space-y-3 mb-4 flex-1">
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Format 46 x 31,5 cm quer</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>Der Gigant f&uuml;r die gro&szlig;en Werke!</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="icon-heart"></span>
+                  <span>4&ndash;300 Seiten Inhalt + Deckblatt und R&uuml;ckwand m&ouml;glich</span>
+                </div>
+              </div>
+              <a href="#" class="btn-black">Jetzt drucken</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="grey">
+    <div class="max-w-screen-xl mx-auto px-4 py-10">
+
+      <!-- Footer Top Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+        <!-- Service-Hotline -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Service-Hotline</h3>
+          <p class="text-gray-700 text-lg font-bold">07309 / 4010838</p>
+          <p class="text-gray-600 text-sm">Mo-Fr, 10:00 - 14:00 Uhr</p>
+        </div>
+
+        <!-- Rechtliches -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Rechtliches</h3>
+          <ul class="list-none p-0 space-y-1 text-sm">
+            <li><a href="contact.html" class="text-gray-700 hover:text-blue-700">Impressum</a></li>
+            <li><a href="agb.html" class="text-gray-700 hover:text-blue-700">AGB</a></li>
+            <li><a href="shipping.html" class="text-gray-700 hover:text-blue-700">Zahlung &amp; Versand</a></li>
+            <li><a href="datenschutz.html" class="text-gray-700 hover:text-blue-700">Datenschutz</a></li>
+            <li><a href="widerrufsrecht.html" class="text-gray-700 hover:text-blue-700">Widerrufserkl&auml;rung</a></li>
+          </ul>
+        </div>
+
+        <!-- Sicher einkaufen -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Sicher einkaufen</h3>
+          <p class="text-gray-600 text-sm mb-2">Bei capellaprint kaufen Sie sicher ein. Dies wird erm&ouml;glicht durch SSL-Verschl&uuml;sselung.</p>
+          <p class="text-gray-600 text-sm">Sicheres Einkaufen nach DSGVO Standards</p>
+        </div>
+
+        <!-- Versandarten & Zahlungsarten -->
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3">Versandarten</h3>
+          <div class="flex gap-2 mb-4">
+            <div class="icon-placeholder" title="Versandart"></div>
+          </div>
+
+          <h3 class="font-bold text-gray-900 mb-3">Zahlungsarten</h3>
+          <div class="flex gap-2">
+            <div class="icon-placeholder" title="Zahlungsart"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Wir sind Mitglied -->
+      <div class="border-t border-gray-300 pt-6 mb-6">
+        <p class="text-sm text-gray-700 font-bold mb-1">Wir sind Mitglied im:</p>
+        <p class="text-sm text-gray-600">BDM &ndash; Bundesverband Deutscher Musikalienfachh&auml;ndler</p>
+      </div>
+
+      <!-- Impressum -->
+      <div class="border-t border-gray-300 pt-6 mb-6">
+        <h3 class="font-bold text-gray-900 mb-3">Impressum</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          AURIO GmbH, Augsburger Stra&szlig;e 9, 86497 Horgau, Deutschland<br />
+          Tel.: 08294 / 8604974<br />
+          E-Mail: office@aurioprint.com<br />
+          Registergericht: Augsburg<br />
+          Registernummer: HRB 33832<br />
+          Gesch&auml;ftsf&uuml;hrer: Sebastian Gabriel<br />
+          Umsatzsteuer-Identifikationsnummer: DE326155106<br />
+          Verantwortliche/r i.S.d. &sect; 18 Abs. 2 MStV: Sebastian Gabriel, c/o AURIO GmbH, Augsburger Stra&szlig;e 9, 86497 Horgau<br /><br />
+          Plattform der EU-Kommission zur Online-Streitbeilegung: <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener" class="text-blue-700 hover:underline">https://ec.europa.eu/odr</a><br /><br />
+          Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+        </p>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-300 pt-6 text-center">
+        <p class="text-xs text-gray-500">
+          * Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a href="shipping.html" class="text-blue-700 hover:underline">Versandkosten</a>, wenn nicht anders angegeben.<br />
+          &copy; 2026 AURIOPRINT &ndash; Alle Rechte vorbehalten.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

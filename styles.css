@@ -1,0 +1,176 @@
+/* Custom Colors from capellaprint */
+.red { background: #D95A4E; }
+.bred { background-color: #D5E7F2 !important; }
+.darkblue { background: #93AEBF; }
+.brown { background: #EDEADE; }
+.green { background: #CCD96A; }
+.blue { background: #D5E7F2; }
+.beige { background: #EDEADE; }
+.midNightBlue { background: #696E8B; }
+.orange { background: #F29C50; }
+.pink { background: #F2CED5; }
+.yellow { background: #F2CF63; }
+.grey { background: #F5F5F5; }
+
+/* Brand Colors */
+:root {
+  --brand-primary: #0d588f;
+  --brand-light: #5ebbff;
+  --brand-dark: #026ebd;
+}
+
+/* Typography Overrides (from UnoCSS preflights) */
+h1 {
+  line-height: 2.5rem;
+  font-size: 2.25rem;
+}
+h2 {
+  line-height: 2rem;
+  font-size: 1.75rem;
+  margin-bottom: 15px !important;
+  font-weight: bold;
+}
+h3 {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+ol, ul, dl {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ol {
+  list-style-type: decimal;
+}
+
+/* Links */
+a {
+  text-decoration: auto !important;
+}
+a.active-link {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+/* Custom padding override */
+.p-5-custom {
+  padding: 2rem !important;
+}
+
+/* Border 12px custom */
+.border-12 {
+  border-width: 12px;
+}
+
+/* Custom thick text */
+.thick {
+  font-weight: bold;
+}
+
+/* Small screen max height for images */
+@media (max-width: 767px) {
+  .smmax-h-xs {
+    max-height: 300px;
+  }
+}
+
+/* Navigation link styles */
+nav a:hover {
+  color: var(--brand-primary);
+}
+nav a.active {
+  color: var(--brand-primary);
+  font-weight: bold;
+}
+
+/* SVG icon placeholder styles */
+.icon-placeholder {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background: #e5e7eb;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.icon-small {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: #e5e7eb;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.icon-heart {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-heart::before {
+  content: "♥";
+  color: var(--brand-primary);
+}
+
+/* Image placeholder */
+.img-placeholder {
+  background: #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Footer styles */
+footer .a {
+  display: block;
+  padding: 2px 0;
+  color: #374151;
+}
+footer .a:hover {
+  color: var(--brand-primary);
+}
+
+/* Button styles */
+.btn-black {
+  background-color: black;
+  color: white;
+  border-radius: 9999px;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-black:hover {
+  background-color: #374151;
+}
+.btn-black-sm {
+  background-color: black;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none !important;
+}
+.btn-black-sm:hover {
+  background-color: #374151;
+  color: white;
+}
+
+/* Logo placeholder */
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--brand-primary);
+  text-decoration: none !important;
+}
