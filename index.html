@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>capellaprint - AURIOPRINT | Erstklassiger Musikaliendruck</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>capellaprint - günstig Musiknoten drucken lassen</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: 'Noto Sans', sans-serif;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>body { font-family: 'Noto Sans', sans-serif; }</style>
 </head>
 <body class="min-h-screen flex flex-col">
 
   <!-- Announcement Bar -->
   <div class="blue py-2">
     <div class="max-w-screen-xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-1 text-sm text-gray-700 px-4">
-      <span>Erstklassige Musikverlagsqualit&auml;t</span>
-      <span>B&uuml;hnenerprobte Notenpapiere</span>
+      <span>Erstklassige Musikverlagsqualität</span>
+      <span>Bühnenerprobte Notenpapiere</span>
       <span>Kauf auf Rechnung</span>
       <span>Schneller Versand</span>
     </div>
@@ -32,20 +26,20 @@
   <header class="border-b border-gray-200">
     <div class="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Logo -->
-      <a href="index.html" class="logo-text text-xl font-bold" style="color: var(--brand-primary); text-decoration: none;">
+      <a href="index.html" class="logo-text text-xl font-bold active-link" style="color: var(--brand-primary); text-decoration: none;">
         capella <span class="font-normal">AURIOPRINT</span>
       </a>
 
       <!-- Navigation -->
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#" class="text-gray-700 hover:text-gray-900">Notenheft konfigurieren</a>
+        <a href="konfigurator.html" class="text-gray-700 hover:text-gray-900">Notenheft konfigurieren</a>
         <a href="klammerheftung.html" class="text-gray-700 hover:text-gray-900">Noten mit Klammerheftung</a>
         <a href="spiralbindung.html" class="text-gray-700 hover:text-gray-900">Noten mit Spiralbindung</a>
         <a href="good-to-know.html" class="text-gray-700 hover:text-gray-900">Wissenswertes</a>
         <a href="contact.html" class="text-gray-700 hover:text-gray-900">Kontakt</a>
       </nav>
 
-      <!-- Cart Icon Placeholder -->
+      <!-- Cart Icon -->
       <div class="flex items-center">
         <a href="#" class="relative text-gray-700 hover:text-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,7 +52,7 @@
 
     <!-- Mobile Navigation -->
     <nav class="md:hidden border-t border-gray-200 px-4 py-3 flex flex-wrap gap-3 text-sm">
-      <a href="#" class="text-gray-700">Notenheft konfigurieren</a>
+      <a href="konfigurator.html" class="text-gray-700">Notenheft konfigurieren</a>
       <a href="klammerheftung.html" class="text-gray-700">Noten mit Klammerheftung</a>
       <a href="spiralbindung.html" class="text-gray-700">Noten mit Spiralbindung</a>
       <a href="good-to-know.html" class="text-gray-700">Wissenswertes</a>
@@ -68,57 +62,308 @@
 
   <!-- Main Content -->
   <main class="flex-1">
-    <div class="max-w-screen-xl mx-auto px-4 py-12">
+    <div class="max-w-screen-xl mx-auto px-4">
 
-      <!-- Hero Section -->
-      <section class="text-center mb-16">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">Willkommen bei capellaprint</h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ihr Partner f&uuml;r erstklassigen Musikaliendruck</p>
+      <!-- SECTION 1: Hero -->
+      <section class="mt-15 flex flex-col md:flex-row">
+        <!-- Left: Image -->
+        <div class="md:w-6/9">
+          <div class="img-placeholder w-full h-full min-h-[300px]">
+            <span class="text-gray-500">pic1.png</span>
+          </div>
+        </div>
+        <!-- Right: Green Box -->
+        <div class="md:w-3/9 green p-5 flex flex-col justify-between">
+          <div>
+            <h2>Ihre Partituren, perfekt gedruckt</h2>
+            <p class="font-bold">Jetzt neu:</p>
+            <p>Mit Ihrer capella-Software sind Sie es gewohnt, Partituren in bester Notensatzmanier erstellen zu können; mit capellaprint lassen Sie diese künftig auch in Musikverlagsqualität drucken.</p>
+          </div>
+          <div class="mt-4">
+            <a href="konfigurator.html" class="btn-black">Jetzt starten</a>
+          </div>
+        </div>
       </section>
 
-      <!-- Product Teasers -->
-      <section class="grid md:grid-cols-2 gap-8 mb-16">
-        <!-- Klammerheftung Teaser -->
-        <a href="klammerheftung.html" class="block group">
-          <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-            <div class="img-placeholder h-56 w-full">
-              <span class="text-gray-500">Noten mit Klammerheftung</span>
-            </div>
-            <div class="p-6">
-              <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">Noten mit Klammerheftung</h2>
-              <p class="text-gray-600 mt-2">Professionell geklammerte Notenhefte in verschiedenen Formaten und Papierst&auml;rken.</p>
-              <span class="btn-black-sm mt-4 inline-block">Jetzt entdecken</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Spiralbindung Teaser -->
-        <a href="spiralbindung.html" class="block group">
-          <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-            <div class="img-placeholder h-56 w-full">
-              <span class="text-gray-500">Noten mit Spiralbindung</span>
-            </div>
-            <div class="p-6">
-              <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">Noten mit Spiralbindung</h2>
-              <p class="text-gray-600 mt-2">Spiralgebundene Notenhefte f&uuml;r optimales Aufschlagverhalten auf dem Notenst&auml;nder.</p>
-              <span class="btn-black-sm mt-4 inline-block">Jetzt entdecken</span>
-            </div>
-          </div>
-        </a>
+      <!-- SECTION 2: "So einfach geht's" Heading -->
+      <section class="mt-20">
+        <h1 class="font-bold">So einfach geht's</h1>
       </section>
 
-      <!-- Wissenswertes Section -->
-      <section class="text-center mb-16">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">Wissenswertes</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto mb-6">Erfahren Sie mehr &uuml;ber unsere Papiere, Bindungsarten und Druckverfahren.</p>
-        <a href="good-to-know.html" class="btn-black-sm">Mehr erfahren</a>
+      <!-- SECTION 3: 3 Steps -->
+      <section class="flex flex-col md:flex-row gap-0 mt-4">
+        <!-- Step 1 -->
+        <div class="grey p-5 md:w-3/9">
+          <div class="icon-placeholder mb-4"></div>
+          <h2>Schritt 1: Notenprojekt kalkulieren.</h2>
+          <p>Es ist ganz einfach: Mit unserem Konfigurator stellen Sie sich die perfekte Notenausgabe zusammen.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="grey p-5 md:w-3/9">
+          <div class="icon-placeholder mb-4"></div>
+          <h2>Schritt 2: Laden Sie Ihre Noten-PDF hoch.</h2>
+          <p>Als zweiten Schritt übermitteln Sie uns die PDF-Datei(en) Ihres Werks, die Sie in capella erstellt haben.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="grey p-5 md:w-3/9">
+          <div class="icon-placeholder mb-4"></div>
+          <h2>Schritt 3: Bestellen – schon fertig!</h2>
+          <p>Zuletzt bestellen Sie Ihre Noten ganz bequem online. Ein paar Tage später ist die Musikpost schon da!</p>
+          <div class="mt-4">
+            <a href="konfigurator.html" class="btn-black">Jetzt starten</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: "Was ist capellaprint?" Heading -->
+      <section class="mt-20">
+        <h1 class="font-bold">Was ist capellaprint?</h1>
+      </section>
+
+      <!-- SECTION 5: Carousel + Vorteile -->
+      <section class="flex flex-col xl:flex-row mt-4">
+        <!-- Left Column -->
+        <div class="xl:w-5/9">
+          <!-- Quote Carousel (Yellow) -->
+          <div class="yellow p-5 border-12 border-white">
+            <div class="carousel w-full">
+              <!-- Quote 1 -->
+              <div id="quote1" class="carousel-item w-full">
+                <div>
+                  <p class="text-lg italic">&laquo;Spitzenqualität zu hervorragenden Preisen. Wir drucken nur noch hier!&raquo;</p>
+                  <p class="mt-3">&mdash; <strong>Dieter Viehweider</strong>, MUNODI Edition</p>
+                </div>
+              </div>
+              <!-- Quote 2 -->
+              <div id="quote2" class="carousel-item w-full">
+                <div>
+                  <p class="text-lg italic">&laquo;Die Partituren sind übrigens sensationell in Haptik, Aussehen und Nutzbarkeit.&raquo;</p>
+                  <p class="mt-3">&mdash; <strong>Alexander Mottok – Chefdirigent</strong>, Deutsches Ärzteorchester</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center gap-2 mt-3">
+              <a href="#quote1" class="btn btn-xs">1</a>
+              <a href="#quote2" class="btn btn-xs">2</a>
+            </div>
+          </div>
+
+          <!-- Pink Box: Druckqualität -->
+          <div class="pink p-5 border-12 border-white">
+            <h2>Beste Druckqualität für Ihre Noten – made in Germany.</h2>
+            <p>Für capellaprint haben sich capella-software und die spezialisierte Musikaliendruckerei AURIOPRINT aus Bayern zusammengeschlossen. AURIOPRINT fertigt für Musikverlage, Orchester und Komponisten weltweit Noten. Unter der Marke capellaprint bieten wir Ihnen gemeinsam ab sofort die bestmögliche Druckqualität für Ihre eigenen Partituren.</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Vorteile (Green) -->
+        <div class="xl:w-4/9 green p-5 border-12 border-white">
+          <h2>
+            <span class="icon-heart mr-2"></span>
+            Ihre Vorteile
+          </h2>
+
+          <div class="flex items-start gap-3 mb-4">
+            <span class="icon-heart mt-1"></span>
+            <div>
+              <p class="font-bold">Erstklassiger Notendruck</p>
+              <p>Mit elfenbeinfarbigem Notenpapier, einer praktikablen und langlebigen Bindung und einer gestochen scharfen Druckqualität erhalten Sie eine rundum professionelle Partitur.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 mb-4">
+            <span class="icon-heart mt-1"></span>
+            <div>
+              <p class="font-bold">Musikalientypische Papierformate</p>
+              <p>Musikalientypische Formate vom Klavierauszug (19 x 27 cm), DIN A4, Concertformat / NE (22,8 x 30,5 cm) und darüber hinaus sind unser tägliches Geschäft.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 mb-4">
+            <span class="icon-heart mt-1"></span>
+            <div>
+              <p class="font-bold">Versandfertig in kürzester Zeit</p>
+              <p>Wir versenden prestissimo: Die meisten unserer Notenausgaben verlassen innerhalb von 48 bis 72 Stunden nach Bestellung unser Haus.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="icon-heart mt-1"></span>
+            <div>
+              <p class="font-bold">Kauf auf Rechnung &amp; Lastschrift</p>
+              <p>Die beliebteste Zahlart in Deutschland – natürlich auch bei capellaprint! Mit unserem Paymentpartner genießen Sie 14 Tage Zahlungsziel nach Warenerhalt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: Quotes + Tipp -->
+      <section class="flex flex-col xl:flex-row">
+        <!-- Left Column -->
+        <div class="xl:w-6/9">
+          <h1 class="font-bold mt-20">&laquo;Ein attraktiver Service für Musiker&raquo;</h1>
+
+          <!-- Yellow Quote Box -->
+          <div class="yellow p-20 border-12 border-white">
+            <div class="carousel w-full">
+              <!-- Quote 1 -->
+              <div id="quote3" class="carousel-item w-full">
+                <div>
+                  <p class="text-lg italic">&laquo;capellaprint ist ein attraktiver Service und hervorragend geeignet, um aus Ihren Partituren das Optimum herauszuholen.&raquo;</p>
+                  <p class="mt-3">&mdash; <strong>Dr. Dominik Hörnel</strong>, Vorstandsvorsitzender, capella-software AG</p>
+                </div>
+              </div>
+              <!-- Quote 2 -->
+              <div id="quote4" class="carousel-item w-full">
+                <div>
+                  <p class="text-lg italic">&laquo;Es macht mich stolz, mit unserer Musikaliendruckerei einen echten Mehrwert für alle capella-Nutzer:innen bieten zu können.&raquo;</p>
+                  <p class="mt-3">&mdash; <strong>Sebastian Gabriel</strong>, Geschäftsführer AURIOPRINT</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center gap-2 mt-3">
+              <a href="#quote3" class="btn btn-xs">1</a>
+              <a href="#quote4" class="btn btn-xs">2</a>
+            </div>
+          </div>
+
+          <!-- Image Placeholder -->
+          <div class="border-12 border-white">
+            <div class="img-placeholder w-full min-h-[300px]">
+              <span class="text-gray-500">Bild</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Unser Tipp -->
+        <div class="xl:w-3/9">
+          <h1 class="font-bold mt-20">Unser Tipp</h1>
+
+          <!-- Blue FAQ Box -->
+          <div class="blue p-5 border-12 border-white">
+            <h2>Häufige Fragen</h2>
+
+            <!-- FAQ 1 -->
+            <div class="collapse collapse-arrow bg-white mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div class="collapse-title font-bold">Gehe ich ein Abonnement ein?</div>
+              <div class="collapse-content">
+                <p>Nein, capellaprint ist nicht mit einem Abonnement verbunden. Für den Bestellprozess können Sie auf Wunsch zwar ein kostenfreies Kundenkonto erstellen, dies verpflichtet Sie aber zu nichts und ist jederzeit wieder deaktivierbar.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="collapse collapse-arrow bg-white mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div class="collapse-title font-bold">Werden meine Druckdaten kontrolliert?</div>
+              <div class="collapse-content">
+                <p>Ja. Jede hochgeladene PDF-Datei wird von unseren Systemen standardisiert kontrolliert und ggf. gleich korrigiert, um ein professionelles Druckbild zu gewährleisten. Sollten Datenfehler ein manuelles Eingreifen notwendig machen, wird sich ein Mitarbeiter vor Ausführung der Produktion mit Ihnen per E-Mail in Verbindung setzen. Bitte beachten Sie unbedingt unsere Druckdatenvorgaben!</p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="collapse collapse-arrow bg-white mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div class="collapse-title font-bold">Wie erfolgt die Bestellung, was kostet es?</div>
+              <div class="collapse-content">
+                <p>Transparenz für unsere Kunden ist unser Leitmotiv. capellaprint garantiert Ihnen dauerhaft niedrige Preise ohne versteckte Zusatzkosten. Die Nutzung unseres Druckportals ist selbstverständlich kostenfrei.</p>
+                <p class="mt-2">Sie bezahlen, wie im normalen Online-Shopping auch, bei der Bestellung Ihrer Notenausgaben. Hierfür haben Sie die Wahl zwischen den sicheren Zahlungsarten PayPal, Klarna Rechnung und Kreditkarte.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="collapse collapse-arrow bg-white mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div class="collapse-title font-bold">Kann ich gedruckte Noten zurückgeben?</div>
+              <div class="collapse-content">
+                <p>Ihre Partituren werden nach Ihren Vorgaben individuell für Sie gefertigt. Ein Rückgaberecht ist deshalb leider nicht möglich. Sollten wir trotz korrekter Druckdaten von Ihnen fehlerhaft drucken, liefern wir selbstverständlich kostenfrei Ersatz.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: "Unsere Topseller" Heading -->
+      <section class="mt-20">
+        <h1 class="font-bold">Unsere Topseller</h1>
+      </section>
+
+      <!-- SECTION 8: 3 Topseller Cards -->
+      <section class="flex flex-col md:flex-row mt-4">
+        <!-- Card 1 -->
+        <div class="blue md:w-3/9 border-12 border-white">
+          <div class="img-placeholder w-full min-h-[200px]">
+            <span class="text-gray-500">Notenheft Klammerheftung</span>
+          </div>
+          <div class="p-5">
+            <h2>Notenheft DIN A4 Klammerheftung</h2>
+            <div class="flex items-start gap-3 mb-2">
+              <span class="icon-heart mt-1"></span>
+              <p>Umschlag aus matt-brillantem Chromokarton mit 260g Stärke</p>
+            </div>
+            <div class="flex items-start gap-3 mb-2">
+              <span class="icon-heart mt-1"></span>
+              <p>Innenteil mit klassisch gelblichem Notenpapier</p>
+            </div>
+            <div class="flex items-start gap-3 mb-4">
+              <span class="icon-heart mt-1"></span>
+              <p>Rechteckiger Heftrücken für ein hochprofessionelles Aussehen</p>
+            </div>
+            <a href="konfigurator.html" class="btn-black">Jetzt starten</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="pink md:w-3/9 border-12 border-white">
+          <div class="img-placeholder w-full min-h-[200px]">
+            <span class="text-gray-500">Stimmenheft Klammerheftung</span>
+          </div>
+          <div class="p-5">
+            <h2>Stimmenheft DIN A4 Klammerheftung ohne Umschlag</h2>
+            <div class="flex items-start gap-3 mb-2">
+              <span class="icon-heart mt-1"></span>
+              <p>Blendfreies &amp; raschelarmes Notenpapier mit gelblicher Färbung</p>
+            </div>
+            <div class="flex items-start gap-3 mb-2">
+              <span class="icon-heart mt-1"></span>
+              <p>Gestochen scharfer Notentext in sattem Schwarz</p>
+            </div>
+            <div class="flex items-start gap-3 mb-4">
+              <span class="icon-heart mt-1"></span>
+              <p>Hergestellt nach den strengen Regularien der Deutschen Orchestervereinigung e.V.</p>
+            </div>
+            <a href="konfigurator.html" class="btn-black">Jetzt starten</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="pink md:w-3/9 border-12 border-white">
+          <div class="img-placeholder w-full min-h-[200px]">
+            <span class="text-gray-500">Notenbuch Spiralbindung</span>
+          </div>
+          <div class="p-5">
+            <h2>Notenbuch DIN A4 Spiralbindung hoch</h2>
+            <div class="flex items-start gap-3 mb-2">
+              <span class="icon-heart mt-1"></span>
+              <p>Blendfreies &amp; raschelarmes Notenpapier mit gelblicher Färbung</p>
+            </div>
+            <div class="flex items-start gap-3 mb-2">
+              <span class="icon-heart mt-1"></span>
+              <p>Gestochen scharfer Notentext in sattem Schwarz</p>
+            </div>
+            <div class="flex items-start gap-3 mb-4">
+              <span class="icon-heart mt-1"></span>
+              <p>Hergestellt nach den strengen Regularien der Deutschen Orchestervereinigung e.V.</p>
+            </div>
+            <a href="konfigurator.html" class="btn-black">Jetzt starten</a>
+          </div>
+        </div>
       </section>
 
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="grey">
+  <footer class="grey mt-20">
     <div class="max-w-screen-xl mx-auto px-4 py-10">
 
       <!-- Footer Top Grid -->
@@ -127,10 +372,10 @@
         <!-- Service-Hotline -->
         <div>
           <h3 class="font-bold text-gray-900 mb-3">Service-Hotline</h3>
-          <p class="text-gray-600 text-sm">Unterst&uuml;tzung und Beratung unter:</p>
+          <p class="text-gray-600 text-sm">Unterstützung und Beratung unter:</p>
           <p class="text-gray-700 text-lg font-bold">07309 / 4010838</p>
           <p class="text-gray-600 text-sm">Mo-Fr, 10:00 - 14:00 Uhr</p>
-          <p class="text-gray-600 text-sm mt-1">Oder &uuml;ber unser Kontaktformular.</p>
+          <p class="text-gray-600 text-sm mt-1">Oder über unser Kontaktformular.</p>
         </div>
 
         <!-- Rechtliches -->
@@ -141,14 +386,14 @@
             <li><a href="agb.html" class="text-gray-700 hover:text-blue-700">AGB</a></li>
             <li><a href="shipping.html" class="text-gray-700 hover:text-blue-700">Zahlung &amp; Versand</a></li>
             <li><a href="datenschutz.html" class="text-gray-700 hover:text-blue-700">Datenschutz</a></li>
-            <li><a href="widerrufsrecht.html" class="text-gray-700 hover:text-blue-700">Widerrufserkl&auml;rung</a></li>
+            <li><a href="widerrufsrecht.html" class="text-gray-700 hover:text-blue-700">Widerrufserklärung</a></li>
           </ul>
         </div>
 
         <!-- Sicher einkaufen -->
         <div>
           <h3 class="font-bold text-gray-900 mb-3">Sicher einkaufen</h3>
-          <p class="text-gray-600 text-sm">Bei capellaprint kaufen Sie sicher ein. Dies wird erm&ouml;glicht durch SSL-Verschl&uuml;sselung, bei der eine sichere Verbindung zwischen unserem Server und Ihrem Browser aufgebaut wird.</p>
+          <p class="text-gray-600 text-sm">Bei capellaprint kaufen Sie sicher ein. Dies wird ermöglicht durch SSL-Verschlüsselung, bei der eine sichere Verbindung zwischen unserem Server und Ihrem Browser aufgebaut wird.</p>
           <p class="text-gray-600 text-sm font-bold mt-2">Sicheres Einkaufen nach DSGVO Standards</p>
         </div>
 
@@ -170,22 +415,22 @@
       <!-- Wir sind Mitglied -->
       <div class="border-t border-gray-300 pt-6 mb-6">
         <p class="text-sm text-gray-700 font-bold mb-1">Wir sind Mitglied im:</p>
-        <p class="text-sm text-gray-600">BDM &ndash; Bundesverband Deutscher Musikalienfachh&auml;ndler</p>
+        <p class="text-sm text-gray-600">BDM &ndash; Bundesverband Deutscher Musikalienhandel</p>
       </div>
 
       <!-- Impressum -->
       <div class="border-t border-gray-300 pt-6 mb-6">
         <h3 class="font-bold text-gray-900 mb-3">Impressum</h3>
         <p class="text-sm text-gray-600 leading-relaxed">
-          AURIO GmbH, Augsburger Stra&szlig;e 9, 86497 Horgau, Deutschland<br />
-          Tel.: 08294 / 8604974<br />
-          E-Mail: office@aurioprint.com<br />
-          Registergericht: Augsburg<br />
-          Registernummer: HRB 33832<br />
-          Gesch&auml;ftsf&uuml;hrer: Sebastian Gabriel<br />
-          Umsatzsteuer-Identifikationsnummer: DE326155106<br />
-          Verantwortliche/r i.S.d. &sect; 18 Abs. 2 MStV: Sebastian Gabriel, c/o AURIO GmbH, Augsburger Stra&szlig;e 9, 86497 Horgau<br /><br />
-          Plattform der EU-Kommission zur Online-Streitbeilegung: <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener" class="text-blue-700 hover:underline">https://ec.europa.eu/odr</a><br /><br />
+          AURIO GmbH, Augsburger Straße 9, 86497 Horgau, Deutschland<br>
+          Tel.: 08294 / 8604974<br>
+          E-Mail: office@aurioprint.com<br>
+          Registergericht: Augsburg<br>
+          Registernummer: HRB 33832<br>
+          Geschäftsführer: Sebastian Gabriel<br>
+          Umsatzsteuer-Identifikationsnummer: DE326155106<br>
+          Verantwortliche/r i.S.d. &sect; 18 Abs. 2 MStV: Sebastian Gabriel, c/o AURIO GmbH, Augsburger Straße 9, 86497 Horgau<br><br>
+          Plattform der EU-Kommission zur Online-Streitbeilegung: <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener" class="text-blue-700 hover:underline">https://ec.europa.eu/odr</a><br><br>
           Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
         </p>
       </div>
@@ -193,7 +438,7 @@
       <!-- Copyright -->
       <div class="border-t border-gray-300 pt-6 text-center">
         <p class="text-xs text-gray-500">
-          * Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a href="shipping.html" class="text-blue-700 hover:underline">Versandkosten</a>, wenn nicht anders angegeben.<br />
+          * Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a href="shipping.html" class="text-blue-700 hover:underline">Versandkosten</a>, wenn nicht anders angegeben.<br>
           &copy; 2026 AURIOPRINT &ndash; Alle Rechte vorbehalten.
         </p>
       </div>
